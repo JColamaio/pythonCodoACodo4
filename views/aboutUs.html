@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/css/index.css" />
+    <link rel="stylesheet" href="../public/css/index.css" />
     <title>Comidas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,26 +13,10 @@
       rel="stylesheet"
     />
   </head>
-  <header class="main-header">
-    <div class="main-header-top-bar">
-      <a href="index.html"> <img src="./public/img/logoTemporario.png" class="logo" /></a>
-    </div>
-
-    <a href="#" class="button-navbar">
-      <i class="fas fa-bars"></i>
-    </a>
-
-    <nav class="main-navbar">
-      <ul class="left-navbar">
-        <li><a href="views/aboutUs.html">Quienes somos</a></li>
-        <li><a href="views/menu.html">Menu</a></li>
-        <li><a href="views/reservas.html">Reservas</a></li>
-        <li><a href="views/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+  <%- include('/views/partials/header.ejs') %>
 
   <body>
+    
     <p>FALOPA</p>
   </body>
   <footer>

@@ -1,0 +1,37 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    
+}
+body {
+    background-color: rgb(217, 211, 210);
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    align-items: center;
+}
+
+.left-navbar {
+    border: solid red 2px;
+    display: flex;
+}
+
+.left-navbar li {
+    margin-left: 5em;
+    padding: 0;
+    font-size: 25px;
+}
+
+.logo {
+    width: 7em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+
+.main-navbar {
+    flex-direction: row;
+}
