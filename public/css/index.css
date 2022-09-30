@@ -1,12 +1,15 @@
 * {
     font-family: 'Roboto', sans-serif;
-    
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
+
 body {
     background-color: rgb(217, 211, 210);
 }
 
-.main-header{
+.main-header {
     display: flex;
     justify-content: space-around;
     background-color: aqua;
@@ -30,8 +33,124 @@ body {
     margin-bottom: 1em;
 }
 
-
-
 .main-navbar {
     flex-direction: row;
+}
+
+.miUbicacion {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.main-header .main-navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(1, 7, 12);
+    padding: 10px 20px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.main-header .main-navbar a:hover {
+    background: rgb(217, 211, 210);
+    border-radius: 50px;
+}
+
+.miEtiquetaContacto {
+    align-self: center;
+    font-weight: bold;
+}
+
+.miBotonEnviar {
+    background: rgb(1, 27, 65);
+    font-size: large;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+    color: aliceblue;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.miBotonEnviar:hover {
+    border-radius: 50px;
+    background: rgb(4, 110, 18);
+}
+
+.miContenedor {
+    display: flex;
+}
+
+.miForm {
+    position: relative;
+}
+
+.miContenedorUbicacion {
+    position: relative;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    background: #222224;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header nav {
+    float: right;
+}
+
+header nav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+header nav a:hover {
+    background: #a1790a;
+    border-radius: 50px;
+}
+
+.miLogo {
+    width: auto;
+    transition: all 0.3s;
+}
+
+.miLogo:hover {
+    transform: scale(0.7);
+}
+
+.misLinks {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
