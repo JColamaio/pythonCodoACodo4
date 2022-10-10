@@ -5,77 +5,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../public/css/index.css" />
-    <title>Comidas</title>
+    <link rel="stylesheet" href="/public/css/index.css" />
+    <title>Donde nos encontras</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header class="containerHeader">
-        <div id="miHeaderDinamico">
-    
-        </div>
-    
-        <div class="hero">
-            <div class="textoHero">
-                <h1>VENÍ,</h1>
-                <h1>COMÉ DE VERDAD</h1>
-                <h3>Buenos Aires, Argentina</h3>
-            </div>
-    
-            <div class="containerReservas">
-                <h3>HACÉ TU RESERVA</h3>
-                <hr>
-                <form class="formReservas" action="/my-handling-form-page" method="post">
-                    <ul>
-                      <li>
-                        <label for="personas">Personas</label>
-                        <select id="personas" name="personas">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                      </li>
-                      <li>
-                        <label for="sucursal">Sucursal</label>
-                        <select id="sucursal" name="sucursal">
-                            <option value="Buenos Aires">Buenos Aires</option>
-                            <option value="La Plata">La Plata</option>
-                            <option value="Quilmes">Quilmes</option>
-                            <option value="Berazategui">Berazategui</option>
-                        </select>
-                      </li>
-                      <li>
-                        <label for="msg">Horario</label>
-                        <select id="personas" name="personas">
-                            <option value="1">16:30</option>
-                            <option value="2">17:00</option>
-                            <option value="3">17:30</option>
-                            <option value="4">18:00</option>
-                        </select>
-                      </li>
-    
-                      <li class="button">
-                        <button type="submit">RESERVAR</button>
-                      </li>
-                      
-                    </ul>
-                  </form>
-                  
-    
-            </div>
-    
-        </div>
-    </header>
-    
-    
-    <footer id="miFooterDinamico">
-    </footer>
-    
-    <script src="/app.js"></script>
-</body>
+<div class="containerHeader">
+  <header id="miHeaderDinamico">
+  </header>
 
+  <div class="miContenedorUbicacion">
+    <div><h3 id="miUbicacion">Donde estamos</h3></div>
+    <div><label for="miSucursal">Seleccione Sucursal</label>
+    <select id="miSucursal" name="miSucursal">
+      <option value="1" selected>Buenos Aires</option>
+      <option value="2">La Plata</option>
+      <option value="3">Quilmes</option>
+      <option value="4">Berazategui</option>
+    </select>
+  </div>
+  </div>
+
+  <div class="miFrame">
+    <iframe src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68270007908!2d-58.573732241947475!3d-34.61574328954111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665357582086!5m2!1ses-419!2sar" id="miIframe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <footer id="miFooterDinamico">
+  </footer>
+    
+</div>
+ </body>
+
+  <script src="/app.js"></script>
 
 </html>

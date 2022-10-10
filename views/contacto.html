@@ -5,19 +5,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../public/css/index.css" />
-    <title>Contacto</title>
+    <link rel="stylesheet" href="/public/css/index.css" />
+    <title>Decinos lo que quieras</title>
+    <!-- Solo este html tiene bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
 </head>
 
-<header id="miHeaderDinamico">
-</header>
-
 <body>
+<div class="containerHeader">
+    <header id="miHeaderDinamico">
+      </header>
 
-    <div class="miContenedor">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="email" class="form-label">Tu mail</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Tu nombre</label>
+          <input type="text" class="form-control" id="nombre">
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Tus comentarios aqui" id="comentarios"></textarea>
+            <label for="comentarios">Tus comentarios</label>
+          </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="suscribirme">
+            <label class="form-check-label" for="suscribirme">
+             Suscribirme a las novedades
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-success">Comentar</button>
+        </div>
+      </form>
+    
+<!--     <div class="miContenedor ">
         <div class="miForm">
             <form action="" method="" class="miContacto">
                 <ul>
@@ -37,30 +66,16 @@
                 <button class="miBotonEnviar">Enviar</button>
             </form>
         </div>
-        <div class="miContenedorUbicacion">
-            <h3 id="miUbicacion">Donde estamos</h3>
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4092.952558210275!2d55.517780516910975!3d-4.694549619967088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x231fd54a9dde73a7%3A0x9d8f0289326b98ba!2sVinoth%20shopping%20centre!5e0!3m2!1ses-419!2sar!4v1664161240375!5m2!1ses-419!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
+         </div>
+ -->
+    <footer id="miFooterDinamico">
+        <!-- <a href="https://www.w3schools.com/">Visit W3Schools.com!</a> para agregar dp contactos fake -->
+    </footer>
+</div>
 </body>
-<footer>
-    <ul class="footer-navbar">
-        <li>
-            <a href="/registro">Crea tu cuenta <i class="fas fa-credit-card"></i
-        ></a>
-        </li>
-        <li>
-            <a href="/loginformulario">Ingresa <i class="fas fa-sign-in-alt"></i
-        ></a>
-        </li>
-        <li>
-            <a href="#">Mis compras <i class="fas fa-shopping-cart"></i></a>
-        </li>
-    </ul>
-    <!-- <a href="https://www.w3schools.com/">Visit W3Schools.com!</a> para agregar dp contactos fake -->
-</footer>
+
+<!-- Solo este html tiene bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 <script src="/app.js"></script>
 

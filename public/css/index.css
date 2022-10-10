@@ -1,10 +1,12 @@
+
+
 * {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     list-style: none;
-    
+    color:antiquewhite;
 }
 
 a {
@@ -99,27 +101,31 @@ body {
 }
 
 .miContenedorUbicacion {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-content:center;
+    align-items: center;
 }
 
+.miContenedorUbicacion h3{
+    color:whitesmoke;
+    font-size:xx-large;
+    font-weight: bold;
+}
 
-
-
-
+.miContenedorUbicacion label{
+    color:whitesmoke;
+    font-size:medium;
+    font-weight: normal;
+}
 .containerHeader {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/img/hero-background.jpg");
-    /* Set a specific height */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/img/hero-background.jpg");
   height: 100%;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
-
-
-
 
 .header {
     width: 100%;
@@ -129,15 +135,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-
-
-.wrapper {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
 }
 
 header nav {
@@ -156,6 +153,7 @@ header nav a {
     -webkit-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms smooth;
+    margin-bottom: 5px;
 }
 
 header nav a:hover {
@@ -186,9 +184,6 @@ header nav a:hover {
 }
 
 
-
-
-
 .hero {
     display: flex;
     flex-direction: column;
@@ -206,13 +201,13 @@ header nav a:hover {
 
 .textoHero h1 {
     font-size: 4rem;
-    text-align: justify;
+    text-align:center;
     line-height: 5rem;
 }
 
 .textoHero h3 {
     font-size: 1.4rem;
-    text-align: justify;
+    text-align: center;
     margin-left: .5rem;
 }
 
@@ -222,15 +217,20 @@ header nav a:hover {
 
 .containerReservas {
     width: 30%;
-    background-color: #fff;
     border-radius: 10px;
     text-align: center;
+    position:relative;
+    border: 2px;
+    border-color: lightgrey;
+    margin:auto;
+    border-style: dashed;
     
 }
 
 .containerReservas h3 {
     font-size: 1.3rem;
-    padding: 1.5rem 0;    
+    padding: 1.5rem 0;   
+    color: antiquewhite; 
 }
 
 .containerReservas hr {
@@ -242,12 +242,101 @@ header nav a:hover {
     margin: 0 auto;
 }
 .containerReservas ul {
-    display: flex;
+     display: flex;
     flex-direction:column;
     align-items: start;
-    
+   
 }
 
 .containerReservas li label {
     margin-right: 2rem;
+    color:lightgray;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.containerReservas li label {
+    margin-right: 2rem;
+    color:lightgray;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.containerReservas form ul li select {
+color:black;
+}
+
+.containerReservas form ul li option {
+    color:black;
+    }
+
+#botonReservas{
+    margin: auto;
+    background-color: rgb(130, 18, 18);
+    color:whitesmoke;
+    font-size:medium;
+    border-radius: 5%;
+    font-weight: bold;
+    }
+
+.footer {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(255,225,255,0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+margin-top: 20px;
+}
+
+footer nav {
+    float: right;
+}
+
+footer nav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms smooth;
+}
+
+footer nav a:hover {
+    border-bottom: 1px solid #fff;
+    transition: 0.9s;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+color: white;
+}
+  
+.fa:hover {
+    opacity: 0.7;
+}
+  
+.miContenedorUbicacion select option {
+color: black;
+
+}
+
+.miContenedorUbicacion select {
+    color: black;
+}
+
+.miFrame{
+margin: 10px;
+display: flex;
+align-content: space-around;
+justify-content: center;
 }
