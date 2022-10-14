@@ -16,37 +16,35 @@
 </head>
 
 <body>
-<div class="containerHeader">
-    <header id="miHeaderDinamico">
-      </header>
+    <div class="containerHeader">
+        <header id="miHeaderDinamico">
+        </header>
 
-      <form class="row g-3">
-        <div class="col-md-6">
-          <label for="email" class="form-label">Tu mail</label>
-          <input type="email" class="form-control" id="email">
-        </div>
-        <div class="col-md-6">
-          <label for="nombre" class="form-label">Tu nombre</label>
-          <input type="text" class="form-control" id="nombre">
-        </div>
-        <div class="form-floating">
-            <textarea class="form-control" placeholder="Tus comentarios aqui" id="comentarios"></textarea>
-            <label for="comentarios">Tus comentarios</label>
-          </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="suscribirme">
-            <label class="form-check-label" for="suscribirme">
+        <form class="row g-3" id="miFormContacto" novalidate>
+            <div class="col-md-4">
+                <label for="miEmailComentarios" class="form-label">Tu mail</label>
+                <input type="email" class="form-control" id="miEmailComentarios">
+            </div>
+            <div class="col-md-4">
+                <label for="miNombreComentarios" class="form-label">Tu nombre</label>
+                <input type="text" class="form-control" id="miNombreComentarios">
+            </div>
+            <div class="col-md-8">
+                <textarea class="form-control" placeholder="Tus comentarios aqui" id="mensaje"></textarea>
+            </div>
+            <div class="col-8">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="suscribirme">
+                    <label class="form-check-label" for="suscribirme">
              Suscribirme a las novedades
             </label>
-          </div>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-success">Comentar</button>
-        </div>
-      </form>
-    
-<!--     <div class="miContenedor ">
+                </div>
+            </div>
+            <div class="col-8">
+                <button class="btn btn-success" id="miBotonComentarios">Comentar</button>
+            </div>
+        </form>
+        <!--     <div class="miContenedor ">
         <div class="miForm">
             <form action="" method="" class="miContacto">
                 <ul>
@@ -68,15 +66,16 @@
         </div>
          </div>
  -->
-    <footer id="miFooterDinamico">
-        <!-- <a href="https://www.w3schools.com/">Visit W3Schools.com!</a> para agregar dp contactos fake -->
-    </footer>
-</div>
+        <footer id="miFooterDinamico">
+            <!-- <a href="https://www.w3schools.com/">Visit W3Schools.com!</a> para agregar dp contactos fake -->
+        </footer>
+    </div>
 </body>
 
 <!-- Solo este html tiene bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 <script src="/app.js"></script>
+<script src="/public/js/validaciones.js"></script>
 
 </html>

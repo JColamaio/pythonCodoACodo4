@@ -105,7 +105,7 @@ const aPinterest = document.createElement("a");
 const aYoutube = document.createElement("a");
 
 
-aInstagram.setAttribute("href", "www.instagram.com" );
+aInstagram.setAttribute("href", "www.instagram.com");
 aFacebook.setAttribute("href", "www.facebook.com");
 aTwitter.setAttribute("href", "www.twitter.com");
 aPinterest.setAttribute("href", "www.pinterest.com");
@@ -143,6 +143,7 @@ miFragmentoFooter.appendChild(navFooter);
 miFooter.appendChild(miFragmentoFooter);
 miFooter.classList.add("footer");
 
+
 //Para la pagina de Sucursales
 
 var miSelector = document.getElementById("miSucursal");
@@ -166,5 +167,4 @@ function cambiarIframe() {
             document.getElementById("miIframe").setAttribute("src", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52443.46715259274!2d-58.23349972367625!3d-34.762728712306235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f348c2fbdbf%3A0x80217bd276933f07!2sBerazategui%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1665357938953!5m2!1ses-419!2sar");
             break;
     }
-
 }
