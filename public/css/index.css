@@ -211,7 +211,7 @@ header nav a:hover {
 /* RESERVAS */
 
 .containerReservas {
-    width: 30%;
+    width: 80%;
     border-radius: 10px;
     text-align: center;
     position: relative;
@@ -219,6 +219,9 @@ header nav a:hover {
     border-color: lightgrey;
     margin: auto;
     border-style: dashed;
+    display: flexbox;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .containerReservas h3 {
@@ -229,7 +232,7 @@ header nav a:hover {
 
 .containerReservas hr {
     width: 2rem;
-    margin: 0 auto;
+    margin: auto;
     margin-bottom: 1.3rem;
 }
 
@@ -240,7 +243,7 @@ header nav a:hover {
 .containerReservas ul {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
 }
 
 .containerReservas li label {
@@ -265,13 +268,18 @@ header nav a:hover {
     color: black;
 }
 
+.containerReservas form ul li input {
+    color: black;
+}
+
 #botonReservas {
     margin: auto;
-    background-color: rgb(130, 18, 18);
+    background-color: rgb(110, 24, 24);
     color: whitesmoke;
     font-size: medium;
     border-radius: 5%;
     font-weight: bold;
+    scale: 150%;
 }
 
 .footer {

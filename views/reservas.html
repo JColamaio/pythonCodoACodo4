@@ -22,42 +22,42 @@
 
     <div class="containerReservas">
         <h3>HACÉ TU RESERVA</h3>
-        <hr/>
-        <form class="formReservas" action="/reserva-sucursal" method="post">
+        <form class="formReservas">
             <ul>
                 <li><label for="nomber">Tu nombre</label>
-                    <input type="text" name="nombre">
+                    <input type="text" name="nombre" id="nombre">
                 </li>
                 <li>
                     <label for="personas">Comensales</label>
                     <select id="personas" name="personas">
-             <option value="1">1</option>
-             <option value="2">2</option>
-             <option value="3">3</option>
-             <option value="4">4</option>
-            </select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
                 </li>
                 <li>
                     <label for="sucursal">Sucursal</label>
                     <select id="sucursal" name="sucursal">
-              <option value="Buenos Aires">Buenos Aires</option>
-              <option value="La Plata">La Plata</option>
-              <option value="Quilmes">Quilmes</option>
-              <option value="Berazategui">Berazategui</option>
-            </select>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="La Plata">La Plata</option>
+                        <option value="Quilmes">Quilmes</option>
+                        <option value="Berazategui">Berazategui</option>
+                    </select>
                 </li>
                 <li>
                     <label for="horario">Horario</label>
                     <select id="horario" name="horario">
-            <option value="1">16:30</option>
-            <option value="2">17:00</option>
-            <option value="3">17:30</option>
-            <option value="4">18:00</option>
-            </select>
+                        <option value="1">16:30</option>
+                        <option value="2">17:00</option>
+                        <option value="3">17:30</option>
+                        <option value="4">18:00</option>
+                    </select>
                 </li>
-                <hr/>
             </ul>
-            <button type="submit" id="botonReservas">RESERVAR</button>
+            <h3></h3>
+            <button type="button" id="botonReservas">RESERVAR</button>
+            <h3></h3>
         </form>
     </div>
 
@@ -66,6 +66,6 @@
     </footer>
 </div>
 <script src="/app.js"></script>
-
+<script src="/public/js/validaciones.js"></script>
 
 </html>

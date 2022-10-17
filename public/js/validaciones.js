@@ -68,7 +68,9 @@ function validarDatosContacto(evento) {
         return;
     }
 
+    alert("Gracias por tus valiosos comentarios!");
     this.submit();
+
 }
 
 
@@ -85,3 +87,16 @@ function validarDatosContacto(evento) {
         document.getElementById("mensaje").textContent = "";
     }
 }) */
+
+document.getElementById("botonReservas").addEventListener('click', () => {
+    var miReserva = document.getElementById('nombre').value;
+
+    if (miReserva.length == 0) {
+        alert('El nombre no puede estar vacio');
+        return;
+    }
+
+
+    alert("Tu reserva esta confirmada, te esperamos!");
+    document.getElementById('nombre').value = "";
+})
