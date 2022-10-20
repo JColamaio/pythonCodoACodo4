@@ -365,7 +365,7 @@ footer nav a:hover {
 }
 
 
-/*Para el Menu*/
+/*Para el Menu Responsive*/
 
 .galeria {
     display: flex;
@@ -443,19 +443,19 @@ footer nav a:hover {
     cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .columna {
         flex: 50%;
-        width: 50%;
+        max-width: 50%;
     }
     .slideshow img {
         width: 98%;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .columna {
         flex: 100%;
-        width: 100%;
+        max-width: 100%;
     }
 }
