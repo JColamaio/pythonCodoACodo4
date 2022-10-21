@@ -422,12 +422,25 @@ footer nav a:hover {
 }
 
 .slideshow img {
+<<<<<<< HEAD
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.btnCerrar {
+=======
+>>>>>>> d45557aeea9a3b758b6f01303d7fe55b5747d00c
     position: absolute;
     top: -15px;
     right: -15px;
     font-size: 35px;
     background-color: rgba(0, 0, 0, 0.7);
+<<<<<<< HEAD
+    color: #fff;
+=======
     color: white;
+>>>>>>> d45557aeea9a3b758b6f01303d7fe55b5747d00c
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -443,7 +456,11 @@ footer nav a:hover {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+@media screen and (max-width: 800px) {
+=======
 @media (max-width: 800px) {
+>>>>>>> d45557aeea9a3b758b6f01303d7fe55b5747d00c
     .columna {
         flex: 50%;
         max-width: 50%;
@@ -453,7 +470,11 @@ footer nav a:hover {
     }
 }
 
+<<<<<<< HEAD
+@media screen and (max-width: 600px) {
+=======
 @media (max-width: 600px) {
+>>>>>>> d45557aeea9a3b758b6f01303d7fe55b5747d00c
     .columna {
         flex: 100%;
         max-width: 100%;
