@@ -105,11 +105,11 @@ const aPinterest = document.createElement("a");
 const aYoutube = document.createElement("a");
 
 
-aInstagram.setAttribute("href", "www.instagram.com");
-aFacebook.setAttribute("href", "www.facebook.com");
-aTwitter.setAttribute("href", "www.twitter.com");
-aPinterest.setAttribute("href", "www.pinterest.com");
-aYoutube.setAttribute("href", "www.youtube.com");
+aInstagram.setAttribute("href", "https://www.instagram.com");
+aFacebook.setAttribute("href", "https://www.facebook.com");
+aTwitter.setAttribute("href", "https://www.twitter.com");
+aPinterest.setAttribute("href", "https://www.pinterest.com");
+aYoutube.setAttribute("href", "https://www.youtube.com");
 
 aInstagram.setAttribute("class", "fa fa-instagram");
 aFacebook.setAttribute("class", "fa fa-facebook");
