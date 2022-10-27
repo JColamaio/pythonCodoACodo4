@@ -96,6 +96,9 @@ document.getElementById("botonReservas").addEventListener('click', () => {
         return;
     }
 
+    let miFormuarioReservas = document.getElementById('formReservas');
+
+    miFormuarioReservas.submit();
 
     alert("Tu reserva esta confirmada, te esperamos!");
     document.getElementById('nombre').value = "";

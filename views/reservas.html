@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="/public/img/reservas.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
 </head>
 
@@ -22,7 +23,7 @@
 
     <div class="containerReservas">
         <h3>HACÉ TU RESERVA</h3>
-        <form class="formReservas">
+        <form class="formReservas" id="formReservas" action="https://formspree.io/f/mdojwpka" method="POST">
             <ul>
                 <li><label for="nomber">Tu nombre</label>
                     <input type="text" name="nombre" id="nombre">
