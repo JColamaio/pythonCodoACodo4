@@ -10,7 +10,9 @@ const misRegExp = {
 //miBotonContacto.addEventListener('click', validarDatosContacto);
 
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("miFormContacto").addEventListener('submit', validarDatosContacto);
+    let miFormularioContacto = document.getElementById("miFormContacto")
+    miFormularioContacto.addEventListener('submit', validarDatosContacto);
+
 });
 
 
@@ -37,18 +39,6 @@ document.addEventListener("DOMContentLoaded", function() {
 function validarDatosContacto(evento) {
     evento.preventDefault();
 
-    var miNombre = document.getElementById('miNombreComentarios').value;
-
-    if (miNombre.length == 0) {
-        alert('El nombre no puede estar vacio');
-        return;
-    }
-
-    if (!misRegExp.nombre.test(miNombre)) {
-        alert("El nombre solo puede tener letras y espacios");
-        return;
-    };
-
     var miEmail = document.getElementById('miEmailComentarios').value;
 
     if (miEmail.length == 0) {
@@ -61,6 +51,30 @@ function validarDatosContacto(evento) {
         return;
     };
 
+    var miNombre = document.getElementById('miNombreComentarios').value;
+
+    if (miNombre.length == 0) {
+        alert('El nombre no puede estar vacio');
+        return;
+    }
+
+    if (!misRegExp.nombre.test(miNombre)) {
+        alert("El nombre solo puede tener letras y espacios");
+        return;
+    };
+
+    var miApellido = document.getElementById('miApellidoComentarios').value;
+
+    if (miApellido.length == 0) {
+        alert('El apellido no puede estar vacio');
+        return;
+    }
+
+    if (!misRegExp.nombre.test(miApellido)) {
+        alert("El apellido solo puede tener letras y espacios");
+        return;
+    };
+
     var miComentario = document.getElementById("mensaje").value;
 
     if (miComentario.length < 10) {
@@ -68,8 +82,29 @@ function validarDatosContacto(evento) {
         return;
     }
 
-    alert("Gracias por tus valiosos comentarios!");
-    this.submit();
+    setTimeout(() => {
+        this.submit();
+    }, 2000);
+
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Gracias por tus valiosos comentarios!',
+        showConfirmButton: false,
+        timer: 2000
+    })
+
+    setTimeout(() => {
+        document.getElementById('miEmailComentarios').value = "";
+        document.getElementById('miNombreComentarios').value = ""
+        document.getElementById('miApellidoComentarios').value = "";
+        document.getElementById("mensaje").value = "";
+        document.getElementById("miSuscripcion").checked = false;
+    }, 2000);
+
+
+
+    //alert("Gracias por tus valiosos comentarios!");
 
 }
 
