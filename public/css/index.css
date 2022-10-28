@@ -255,9 +255,10 @@ header nav a:hover {
 
 .containerReservas li label {
     margin-right: 2rem;
-    color: lightgray;
-    font-size: larger;
+    color: whitesmoke;
+    font-size: 48px;
     font-weight: bold;
+    font-family: 'Shalimar';
 }
 
 .containerReservas form ul li select {
@@ -280,6 +281,7 @@ header nav a:hover {
     border-radius: 5%;
     font-weight: bold;
     scale: 150%;
+    font-family: 'Fasthand';
 }
 
 .footer {
@@ -464,4 +466,9 @@ footer nav a:hover {
         flex: 100%;
         max-width: 100%;
     }
+}
+
+.containerReservas h3 {
+    font-family: 'Freehand';
+    font-size: 48px;
 }
