@@ -1,24 +1,22 @@
-//API REST Clima(Weatherbit)
-
+// Weather API - Now using backend proxy for security
 
 var miSelect = document.getElementById("miSucursal");
-miSelect.addEventListener('change', buscarClima);
+miSelect.addEventListener("change", buscarClima);
 
 var miUbicacion = document.getElementById("miIframe");
-miUbicacion.addEventListener('load', buscarClima);
+miUbicacion.addEventListener("load", buscarClima);
 
 function buscarClima() {
-
     var miSelectorTemp = document.getElementById("miSucursal");
     var opcion = miSelectorTemp.selectedIndex;
     var miLocalidad = "";
 
     switch (opcion) {
         case 0:
-            miLocalidad = "Buenos%20Aires";
+            miLocalidad = "Buenos Aires";
             break;
         case 1:
-            miLocalidad = "La%20Plata";
+            miLocalidad = "La Plata";
             break;
         case 2:
             miLocalidad = "Quilmes";
@@ -27,38 +25,28 @@ function buscarClima() {
             miLocalidad = "Berazategui";
             break;
         default:
-            miLocalidad = "Buenos%20Aires";
+            miLocalidad = "Buenos Aires";
             break;
     }
 
-
-    const options = {
-
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '0b22bd4a15msh3ef9beedd23e3a1p11a250jsn508592bab82f',
-            'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
-        }
-    };
-
-    var miURL = "https://weatherapi-com.p.rapidapi.com/current.json?q=" + miLocalidad;
-
-    fetch(miURL, options)
-        .then(response => response.json())
-        .then(response => completarClima(response))
-        .catch(err => console.error(err));
-
+    // Call our backend instead of external API directly
+    fetch("/api/weather/" + encodeURIComponent(miLocalidad))
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.json();
+        })
+        .then((response) => completarClima(response))
+        .catch((err) => console.error("Error fetching weather:", err));
 }
 
 function completarClima(response) {
-
     var miImagenClima = document.getElementById("miImagenClima");
-    var miImagen = response.current.condition.icon
+    var miImagen = response.current.condition.icon;
     var miClimaActual = document.getElementById("miClimaActual");
 
     miImagenClima.setAttribute("src", miImagen);
-
-    miClimaActual.textContent = response.location.name + " " + response.current.temp_c + "°";
-
-    return
+    miClimaActual.textContent =
+        response.location.name + " " + response.current.temp_c + "°";
 }
