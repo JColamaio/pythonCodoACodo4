@@ -1,82 +1,37 @@
 # Resto en Serio
 
-Sitio web para un restaurante ficticio. Proyecto final del curso **Python Codo a Codo 4.0 Full Stack** del Gobierno de la Ciudad de Buenos Aires.
+Proyecto final del curso Python Codo a Codo 4.0 Full Stack (GCBA).
 
-## Qué incluye
+Un sitio web para un restaurante con sistema de reservas, formulario de contacto, selector de sucursales con mapas integrados y un widget del clima que consulta una API externa.
 
-- Página principal con info del restaurante
-- Menú de comidas
-- Sistema de reservas con validación
-- Formulario de contacto
-- Selector de sucursales con mapas
-- Widget de clima (API externa)
+## Stack
 
-## Tecnologías
+Frontend en HTML/CSS/JS vanilla con módulos ES6. Backend con Node.js y Express. Tests con Jest.
 
-- **Frontend:** HTML, CSS, JavaScript vanilla (módulos ES6)
-- **Backend:** Node.js + Express
-- **Testing:** Jest + Supertest
-
-## Requisitos
-
-- Node.js 18 o superior
-
-## Instalación
+## Correr el proyecto
 
 ```bash
-git clone https://github.com/tu-usuario/pythonCodoACodo4.git
-cd pythonCodoACodo4
 npm install
-```
-
-## Configuración
-
-Crear un archivo `.env` en la raíz basándote en `.env.example`:
-
-```
-RAPIDAPI_KEY=tu_api_key_de_weatherapi
-RAPIDAPI_HOST=weatherapi-com.p.rapidapi.com
-PORT=3000
-```
-
-La API key se obtiene gratis en [RapidAPI - WeatherAPI](https://rapidapi.com/weatherapi/api/weatherapi-com).
-
-## Cómo correr el proyecto
-
-**Desarrollo (con hot reload):**
-```bash
 npm run dev
 ```
 
-**Producción:**
-```bash
-npm start
+Abre en `http://localhost:3000`
+
+Para producción: `npm start`
+
+## Configuración del clima
+
+El widget del clima necesita una API key de WeatherAPI (gratis en RapidAPI). Crear un `.env` con:
+
+```
+RAPIDAPI_KEY=tu_key
+RAPIDAPI_HOST=weatherapi-com.p.rapidapi.com
 ```
 
-El servidor arranca en `http://localhost:3000`
+Sin esto el sitio funciona igual, solo no muestra el clima.
 
 ## Tests
 
 ```bash
 npm test
 ```
-
-## Estructura del proyecto
-
-```
-├── server.js           # Entry point del servidor
-├── server/
-│   ├── routes/         # Endpoints de la API
-│   └── utils/          # Validadores y helpers
-├── public/
-│   ├── js/
-│   │   └── modules/    # Módulos JS del frontend
-│   ├── css/
-│   └── img/
-├── views/              # Páginas HTML
-└── tests/              # Tests con Jest
-```
-
-## Licencia
-
-MIT
